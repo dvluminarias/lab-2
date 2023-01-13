@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body{background-image: url(mountain.jpeg); background-size: cover}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Profile Page</title>
 
-h1{color: white; font-size: 20px; text-align: center}
-
-p{color: black; font-family: verdana; font-size: 15px;}
-
-p.round2 {border: 3px solid black; border-radius: 8px; padding: 15px;}
-
-div {width: auto; padding: 50px 215px 100px 215px; margin: 0}
-</style>
-
-<title>Personal Profile Page</title>
+	<style>
+	p, h1{color: white; font-family: arial}
+	h1{margin:0; padding: 10px 50px}
+	body {background-color: black; margin:0; padding: 100px 0px}
+	ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: gray;position: fixed;top: 0;width: 100%;}
+	li {float: right;}
+	li a {display: block;color: black;text-align: center;padding: 14px 16px;text-decoration: none;}
+	li a:hover:not(.active) {background-color: black;color: gray;}
+	.active {background-color: white;}
+	</style>
 </head>
-<body>
 
-<h1 style="background-color:Black;">Personal Profile Page</h1>
+<body>
+	<header>
+            <nav>
+                <ul>
+                    <li><a href="#contact">CONTACT</a></li>
+					<li><a href="#news">ABOUT</a></li>
+					<li><a class="active" href="#home">HOME</a></li>
+					<h1>Personal Profile Page</h1>
+                  </ul> 
+            </nav>
+    </header>
+	
 <div>
-<p class="round2">
+<p>
 <strong>Nickname:</strong> Lumi
 <br><strong>Age:</strong> 20 years old
 
