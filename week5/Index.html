@@ -7,9 +7,9 @@
 	<title>Personal Profile Page</title>
 
 	<style>
-		p, h2, h3, h4, h5, h6  {color: black; font-family: arial; margin: 10px;}
+		h2, h3, h4, h5, h6  {color: black; font-family: arial; margin: 10px;}
 		h1{color: white; font-family: arial; margin:0; padding: 9px 30px}
-		body {background-image: url("slbg.jpg"); margin:0; padding: 10px}
+		body {background-image: url("slbg.jpg"); margin:0; padding: 10px; background-repeat: no-repeat; object-fit:cover;}
 		
 		ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: black; transition: all 0.5s;}
 		li {float: right;}
@@ -22,8 +22,8 @@
 		* {box-sizing: border-box;}
 		.column {float: left; width: 50%; padding: 15px;}
 		.row:after {content: ""; display: table; clear: both;}
+		.footer {background-color: black; color: white; margin: 0; padding: 1px; text-align: center;}
 		@media screen and (max-width:600px) {.column {width: 100%;}
-		
 	</style>
 </head>
 
@@ -43,7 +43,7 @@
 	<p id="demo">
 		<div class="column">
 			<div style="width:100%; height:100%;">
-			<img src="dp.jpg" alt="Norway" style="float:left; width:60%; height:100%; border-radius: 50px; object-fit:cover; margin: 100px 100px 75px 275px;">
+			<img src="dp.jpg" alt="dp" style="float:left; width:60%; height:100%; border-radius: 50px; object-fit:cover; margin: 100px 100px 75px 275px;">
 			</div>
 		</div>
 		<div class="column">
@@ -67,14 +67,16 @@
 		</div>
 	</p>
 </div>
-	
-	<p id="date"></p>
-
-	<script>
-	window.alert(34+35);
-	const d = new Date();
-	document.getElementById("date").innerHTML = d;
-	</script>
-
+<div>
+	<p id="demo"></p>
+		<script>
+		alert("35+34");
+		const d = new Date();
+		document.getElementById("demo").innerHTML = "Today is: " + d.toDateString();
+		</script>
+</div>
+<div class="footer">
+	<p>Footer</p>
+</div>
 </body>
 </html>
