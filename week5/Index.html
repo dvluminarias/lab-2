@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style.css">
 	<title>sheeeeeeeesh</title>
 
 	<style>
-		body {background-color: #f1f1f1;  
+		body {background-color: #2b323c;  
 		}
 		
 		img {display: block;
@@ -71,12 +72,12 @@
 		clear: both;
 		}
 		
-		.header {color: black; 
+		.header {color: white; 
 		font-family: 'Poppins', sans-serif;
 		padding: 10px;
 		}
 		
-		.content{color: black; 
+		.content{color: white; 
 		font-family: Arial;
 		}
 	
@@ -112,9 +113,8 @@
 			</div>
 		</div>
 		<div class="column">
-			<div>
-				<h3>Hello, my name is</h3>
-				<h1>David Wilson Luminarias</h1>
+			<div = "demo">
+				<h1>I am <span class="auto-type"></span></h1>
 				<p class = "justify">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
 				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
@@ -122,6 +122,13 @@
 				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</div>
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+			<script>var typed = new Typed(".auto-type", {
+				strings: ["Natoy na mahal na mahal ka", "Si Ano", "Inevitable", "Iron Man", "David Wilson Luminarias"],
+				typeSpeed: 150,
+				backspeed: 150,
+				loop: true})
+			</script>
 		</div>
 	</p>
 </div>
@@ -131,7 +138,7 @@
 	<p>sample content</p>
 </div>
 <div>
-	<p id ="demo">blabla</p>
+	<p id ="basta">blabla</p>
 	<button type="button" onclick='document.getElementById("demo").innerHTML = "ouch, pain, hurt, disease, illness, sickness, sting, wrench, sorrow, grief, sadness, loneliness, unhappiness, dissatisfaction, resentment, grudge, pique, displeasure, awts, pein, pighati, lumbay, hinagpis, kirot, sakit, pagtangis, iyak, lungkot, siphayo, dalamhati, sama ng loob, bigat sa damdamin"'>
 	Hala!
 	</button>
@@ -139,7 +146,7 @@
 	<script>
 		alert("35+34");
 		const d = new Date();
-		document.getElementById("demo").innerHTML = "Today ngayong araw is: " + d.toDateString();
+		document.getElementById("basta").innerHTML = "Today ngayong araw is: " + d.toDateString();
 	</script>
 </div>
 

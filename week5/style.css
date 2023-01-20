@@ -1,0 +1,14 @@
+.demo{
+	color: #fff;
+	display: flex;
+	
+}
+
+.demo h1{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+span{
+	color: yellow;
+}
