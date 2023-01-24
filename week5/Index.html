@@ -145,7 +145,17 @@
 	<p>sample content</p>
 </div>
 
-<button onclick="this.style.display='none'">Remove this button...</button>
+<div>
+	<button onclick="document.getElementById('num').innerHTML = getRndInteger(75,100)">Grades Predictor :></button>
+
+	<p id="num"></p>
+
+	<script>
+		function getRndInteger(min, max) {
+		return Math.floor(Math.random() * (max - min + 1) ) + min;
+		}
+	</script>
+</div>
 
 <div class="footer">
 	<p>Footer</p>
