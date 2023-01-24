@@ -171,6 +171,22 @@
 	
 	<button onclick="displayDate()">Today ngayong araw is:</button>
 	<p id="try3"></p>
+	
+	<button onclick="myFunction()">Pindutin mo nga</button>
+	<p id="try4"></p>
+	
+	<script>
+		function myFunction() {
+		let text;
+		let person = prompt("Lagay mo pangalan mo plz:", "Natoy");
+		if (person == null || person == "") {
+			text = "Edi wag";
+		} else {
+			text = "Yawa si idol " + person + " man diay ni!";
+		}
+		document.getElementById("try4").innerHTML = text;
+	}
+</script>
 </div>
 
 <div class="footer">
