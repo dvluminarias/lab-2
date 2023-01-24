@@ -145,16 +145,26 @@
 	<p>sample content</p>
 </div>
 
-<div>
-	<button onclick="document.getElementById('num').innerHTML = getRndInteger(75,100)">Grades Predictor :></button>
+<div class = "content">
+	
+	<button onclick="document.getElementById('try').innerHTML = getRndInteger(75,100)">Grades Predictor :></button>
 
-	<p id="num"></p>
+	<p id="try"></p>
 
 	<script>
 		function getRndInteger(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) ) + min;
 		}
 	</script>
+	
+	<h1 id="try2"></h1>
+	<script>
+		setTimeout(myFunction, 3000);
+
+			function myFunction() {
+			document.getElementById("try2").innerHTML = "WAWAWAWAWAW";
+			}
+		</script>
 </div>
 
 <div class="footer">
