@@ -150,21 +150,27 @@
 	<button onclick="document.getElementById('try').innerHTML = getRndInteger(75,100)">Grades Predictor :></button>
 
 	<p id="try"></p>
-
+	<p id="try2"></p>
+	
 	<script>
 		function getRndInteger(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) ) + min;
 		}
-	</script>
 	
-	<h1 id="try2"></h1>
-	<script>
 		setTimeout(myFunction, 3000);
 
-			function myFunction() {
-			document.getElementById("try2").innerHTML = "WAWAWAWAWAW";
-			}
-		</script>
+		function myFunction() {
+		document.getElementById("try2").innerHTML = "WAWAWAWAWAW";
+		}
+			
+		function displayDate() {
+		const d = new Date();
+		document.getElementById("try3").innerHTML = d.toDateString();
+		}
+	</script>
+	
+	<button onclick="displayDate()">Today ngayong araw is:</button>
+	<p id="try3"></p>
 </div>
 
 <div class="footer">
