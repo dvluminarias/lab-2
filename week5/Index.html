@@ -7,28 +7,32 @@
 	<link rel="icon" type="image/png" href="media/icon.jpg">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<title>sheeeeeeeesh</title>
+	<title>Meow Meow Meow</title>
 
 	<style>
-		body {background-color: #2b323c;
+		body {
+		background-color: #2b323c;
 		margin: 0;
 		padding: 0;
 		}
 		
-		img {display: block;
-		border-radius: 40%;
+		img {
+		display: flex;
+		border-radius: 5%;
 		margin-left: auto;
 		margin-right: auto;
 		}
 		
-		ul {list-style-type: none;  
+		ul {
+		list-style-type: none;  
 		overflow: hidden; 
 		background-color: white; 
 		transition: all 0.5s;
 		margin: 0;
 		}
 		
-		li a {float: right;
+		li a {
+		float: right;
 		display: inline-block;
 		color: black; 
 		text-align: center; 
@@ -41,7 +45,8 @@
 		font-size: 1em;
 		}
 		
-		li b { float; left;
+		li b { 
+		float; left;
 		display: inline-block;
 		color: black;
 		text-align: center;
@@ -52,73 +57,105 @@
 		transition: 0.5s;
 		}
 		
-		li a:hover {background-color: black;
+		li a:hover {
+		background-color: black;
 		color: white; 
 		padding-right: 30px;
 		}
 		
-		li a:hover:after {content: '\00bb'; 
+		li a:hover:after {
+		content: '\00bb'; 
 		color: w;
 		}
 		
-		.justify {text-align: justify; 
+		.justify {
+		text-align: justify; 
 		text-justify: inter-word;
 		}
 		
-		* {box-sizing: border-box;
+		.line {
+            padding-bottom: 5px;
+            border-bottom-style: solid;
+            border-bottom-width: 2.5px;
+            width: fit-content;
+        }
+		
+		* {
+		box-sizing: border-box;
 		}
 		
-		.column {float: left; 
+		.column50 {
+		float: left; 
 		width: 50%; 
+		}
+		
+		.column {
+		margin-left: 300px;
+		margin-right: 300px;
 		padding: 20px;
 		}
 		
-		.row:after {content: ""; 
+		.row:after {
+		content: ""; 
 		display: table; 
 		clear: both;
 		}
 		
 		.center {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		height: 200px;
+		text-align: center;
 		}
 		
 		.vertical {
 		padding: 70px 0;
 		}
 		
-		.landing {color: white; 
+		.landing {
+		color: white; 
 		font-family: 'Poppins', sans-serif;
 		padding: 10px;
 		}
 		
-		.content{color: white; 
-		font-family: Arial;
+		.content{
+		color: white; 
+		font-family: Century Gothic;
 		}
 	
-		.footer {background-color: black;
+		.footer {
+		background-color: black;
 		color: white;
 		padding: 10px;
 		text-align: center;
 		margin: 0;
+		position: relative;
 		}
 		
-		@media (max-width: 800px) {
+		@media only screen and (max-width: 1000px){
 			.column {
-				width: 100%;
+				margin-left: 50px;
+				margin-right: 50px;
+			}
 		}
+		
+		@media only screen and (max-width: 600px){
+			.column {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		}
+		
+	
 	</style>
 </head>
 
 <body>
 <div>
 	<ul>
-		<li><a href="#references">References</a></li>
-        <li><a href="#contact">Contact</a></li>
+		<li><a href="#References">References</a></li>
+        <li><a href="#Contact">Contact</a></li>
 		<li><a href="#About Me">About Me</a></li>
-		<li><a href="#home">Home</a></li>
+		<li><a href="#Home">Home</a></li>
 		<li><b>P A R I P A P A</b></li>
     </ul> 
 </div>
@@ -127,23 +164,19 @@
 <div class ="landing">
 	<div class="row">
 		<p>
-			<div class="column">
-				<div>
-					<div style="width:100%; height:100%;">
-					<img src="dp.jpg" alt="dp" style="width:60%;height:100%;">
-					</div>
-				</div>
+			<div class="column50">
+				<p></p>
 			</div>
-			<div class="column">
+			<div class="column50">
 				<div class="vertical">
 					<div = "demo">
 						<h1>I am <span class="auto-type"></span></h1>
 					</div>
 					<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 					<script>var typed = new Typed(".auto-type", {
-						strings: [ "Inevitable", "David Wilson Luminarias", "Iron Man"],
-						typeSpeed: 150,
-						backspeed: 150,
+						strings: [ "Inevitable", "David Luminarias", "Iron Man"],
+						typeSpeed: 50,
+						backspeed: 100,
 						loop: true})
 					</script>
 					<p><i>
@@ -158,9 +191,26 @@
 </div>
 </div>
 
-<div class="w3-container">
-	<div class="content">
-		<p>sample content</p>
+<div>
+	<div class="column">
+		<div class="center">
+			<div class="content">
+				<p class="line" id ="Home" style="font-size: 40px; font-weight: 700; margin-left: auto; margin-right: auto;">
+				About Me
+				</p>
+				<div style="width:100%; height:100%;">
+				<img src="dp.jpg" alt="dp" style="width:50%;height:100%;">	
+				</div>
+				
+				<p>Hello, my name is David Wilson V. Luminarias, but you can call me “Lumi”. I am 20 years old and is currently taking the Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology course at Asia Pacific College. Although BSIT-MI is not my first option, it's still technically one of the courses I am interested in.<p>
+				
+				<p>Given the chance, I would have chosen Bachelor of Science in Forestry though unfortunately, I didn't pass the entrance examination.</p>
+			
+				<p>My hobbies and Interests include watching movies/documentaries/anime, reading manga/manhua/manhwa, playing games, and listening to music.</p>
+			
+				<p>While I don’t think there’s an interesting aspect in my life right now, I want to be successful enough that I can help others and enjoy the things that I want without worry through learning significant things that will be able to apply in real life from this subject.</p>
+			</div>
+		</div>
 	</div>
 </div>
 
