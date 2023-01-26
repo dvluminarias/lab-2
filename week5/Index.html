@@ -23,66 +23,17 @@
 		margin-right: auto;
 		}
 		
-		ul {
-		list-style-type: none;  
-		overflow: hidden; 
-		background-color: white; 
-		transition: all 0.5s;
-		margin: 0;
-		}
-		
-		li a {
-		float: right;
-		display: inline-block;
-		color: black; 
-		text-align: center; 
-		padding: 14px 16px; 
-		text-decoration: none; 
-		font-family: arial;
-		cursor: pointer; 
-		position: relative; 
-		transition: 0.5s;
-		font-size: 1em;
-		}
-		
-		li b { 
-		float; left;
-		display: inline-block;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-family: arial; 
-		position: relative;
-		transition: 0.5s;
-		}
-		
-		li a:hover {
-		background-color: black;
-		color: white; 
-		padding-right: 30px;
-		}
-		
-		li a:hover:after {
-		content: '\00bb'; 
-		color: w;
-		}
-		
 		.justify {
 		text-align: justify; 
 		text-justify: inter-word;
 		}
 		
 		.line {
-            padding-bottom: 5px;
-            border-bottom-style: solid;
-            border-bottom-width: 2.5px;
-            width: fit-content;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        border-bottom-width: 2.5px;
+        width: fit-content;
         }
-		
-		* {
-		box-sizing: border-box;
-		}
 		
 		.column50 {
 		float: left; 
@@ -109,12 +60,6 @@
 		
 		.vertical {
 		padding: 70px 0;
-		}
-		
-		.landing {
-		color: white; 
-		font-family: 'Poppins', sans-serif;
-		padding: 10px;
 		}
 		
 		.content{
@@ -150,18 +95,18 @@
 </head>
 
 <body>
-<div>
-	<ul>
-		<li><a href="#References">References</a></li>
-        <li><a href="#Contact">Contact</a></li>
-		<li><a href="#About Me">About Me</a></li>
-		<li><a href="#Home">Home</a></li>
-		<li><b>P A R I P A P A</b></li>
-    </ul> 
-</div>
+	<div class="header">
+		<nav>
+			<ul>
+				<li><a href="#Home">HOME</a></li>
+				<li><a href="#About">ABOUT</a></li> 
+				<li><a href="#Contact">CONTACT</a></li>
+				<li><a href="#References">REFERENCES</a></li>
+			</ul> 
+		</nav>
+	</div>
 
 <div class="w3-container">
-<div class ="landing">
 	<div class="row">
 		<p>
 			<div class="column50">
@@ -179,7 +124,7 @@
 						backspeed: 100,
 						loop: true})
 					</script>
-					<p><i>
+					<p style="color: white; font-family: 'Poppins', sans-serif; padding: 10px;"><i>
 					“We can never judge the lives of others, because each person knows only their own pain and renunciation. It’s one thing to feel that you are on the right path, but it’s another to think that yours is the only path.”
 					</i>
 					<b> - Paolo Coelho</b>
@@ -189,13 +134,12 @@
 		</p>
 	</div>
 </div>
-</div>
 
 <div>
 	<div class="column">
 		<div class="center">
 			<div class="content">
-				<p class="line" id ="Home" style="font-size: 40px; font-weight: 700; margin-left: auto; margin-right: auto;">
+				<p class="line" id ="About" style="font-size: 40px; font-weight: 700; margin-left: auto; margin-right: auto;">
 				About Me
 				</p>
 				<div style="width:100%; height:100%;">
