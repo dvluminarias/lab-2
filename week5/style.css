@@ -5,6 +5,9 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+.container{
+	height: 100vh;
+}
 .header{
 	width: 100%;
 	height: auto;
@@ -50,15 +53,35 @@ nav ul li a:hover{
 	border-bottom-color: white;
 }
 
-.demo{
+.text-box{
+	margin-top: 10%;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 26px;
 	color: #fff;
-	display: flex;
-	
+	padding-left: 100px;
 }
 
-.demo h1{
-	font-size: 100px;
-	font-weight: 1000;
+.text-box h1{
+	font-size: 75px;
+	line-height: 125px;
+}
+
+.text-box a{
+	margin-top: 30px;
+	display: inline-block;
+	border-radius: 6px;
+	border: 2px solid #fff724;
+	color: #fff724;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+.text-box .btn{
+	background: #fff724;
+	color: #000;
+	margin-left: 30px;
+	font-weight: 600;
 }
 
 span{
