@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>This is fine.</title>
+<title>P A R I P A P A.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="5; url = Index.html">
+<meta http-equiv="refresh" content="5; url = Index.php">
 </head>
 
 <style>

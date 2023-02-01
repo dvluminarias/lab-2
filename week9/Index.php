@@ -3,26 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" type="image/png" href="media/icon.jpg">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
 	<title>Meow Meow Meow</title>
 
 	<style>
-		body {
-		background-color: #2b323c;
-		margin: 0;
-		padding: 0;
-		}
-		
-		img {
-		display: flex;
-		border-radius: 5%;
-		margin-left: auto;
-		margin-right: auto;
-		}
-		
 		.justify {
 		text-align: justify; 
 		text-justify: inter-word;
@@ -41,9 +29,8 @@
 		}
 		
 		.column {
-		margin-left: 300px;
-		margin-right: 300px;
-		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
 		}
 		
 		.row:after {
@@ -61,11 +48,6 @@
 		.vertical {
 		padding: 70px 0;
 		}
-		
-		.content{
-		color: white; 
-		font-family: Century Gothic;
-		}
 	
 		.footer {
 		background-color: black;
@@ -75,51 +57,50 @@
 		margin: 0;
 		position: relative;
 		}
-		
-		@media only screen and (max-width: 1000px){
-			.column {
-				margin-left: 50px;
-				margin-right: 50px;
-			}
-		}
-		
-		@media only screen and (max-width: 600px){
-			.column {
-				margin-left: 10px;
-				margin-right: 10px;
-			}
-		}
-		
-	
+
 	</style>
 </head>
 
 <body>
-	<div class="header">
-		<nav>
-			<ul>
-				<li><a href="#Home">HOME</a></li>
-				<li><a href="#About">ABOUT</a></li> 
-				<li><a href="#Contact">CONTACT</a></li>
-				<li><a href="#References">REFERENCES</a></li>
-			</ul> 
-		</nav>
-	</div>
+	<header>
+		<a href="#" class="logo"><i></i><span>PARIPAPA</span></a>
+
+		<ul class="nav_bar">
+			<li><a href="#Home" class="active">Home</a></li>
+			<li><a href="#About">About</a></li> 
+			<li><a href="#Achievements">Achievements</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+		
+		<div class="main">
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+		
+		<script>
+		const menu = document.querySelector('#menu-icon');
+		const nav_bar = document.querySelector('.nav_bar');
+		
+		menu.onclick = () => {
+			menu.classList.toggle('bx-x');
+			navbar.classList.toggle('open');
+		}
+		</script>
+	</header>
 	
-	<div class="container">
-		<div class="text-box" style="font-family: Century Gothic">
+	<div >
+		<div class="text-box">
 			<div>
 			<h1>I am <span class="auto-type"></span></h1>
 			</div>
 
 			<p>
-			<i>“We can never judge the lives of others, because each person knows only their own pain <br>
-			and renunciation. It’s one thing to feel that you are on the right path, but it’s another <br>
+			<i>“We can never judge the lives of others, because each person knows only their own pain 
+			and renunciation. It’s one thing to feel that you are on the right path, but it’s another 
 			to think that yours is the only path.”</i>
 			<b> - Paolo Coelho</b></p>
 			
 			<a href="">WIP Button 1</a>
-			<a href="" class="btn">WIP Button 2</a>
+			<a href="" class="btn">References</a>
 		</div>
 		
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -133,15 +114,17 @@
 		</script>
 	</div>
 
+<!---========About ======--->
 <div>
 	<div class="column">
 		<div class="center">
-			<div class="content">
-				<p class="line" id ="About" style="font-size: 40px; font-weight: 700; margin-left: auto; margin-right: auto;">
+			<div>
+				<h2 class="line" id ="About" style="font-size: 40px; font-weight: 700; margin-left: auto; margin-right: auto;">
 				About Me
-				</p>
-				<div style="width:100%; height:100%;">
-				<img src="dp.jpg" alt="dp" style="width:50%;height:100%;">	
+				</h2>
+				
+				<div class="about_img">
+					<img src="media/dp.jpg" alt="dp" />	
 				</div>
 				
 				<p>Hello, my name is David Wilson V. Luminarias, but you can call me “Lumi”. I am 20 years old and is currently taking the Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology course at Asia Pacific College. Although BSIT-MI is not my first option, it's still technically one of the courses I am interested in.<p>
@@ -156,8 +139,7 @@
 	</div>
 </div>
 
-<div class="content">
-	
+<div>
 	<button onclick="document.getElementById('try').innerHTML = getRndInteger(75,100)">Grades Predictor :></button>
 
 	<p id="try"></p>
@@ -252,6 +234,8 @@ echo "<br>";
 echo $gender;
 ?>
 </div>
+
+<!---========Footer ======--->
 <div class="footer">
 	<p>Footer</p>
 </div>
