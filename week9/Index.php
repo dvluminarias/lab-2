@@ -139,52 +139,12 @@
 	</div>
 </div>
 
-<div>
-	<button onclick="document.getElementById('try').innerHTML = getRndInteger(75,100)">Grades Predictor :></button>
+<br>
+<br>
 
-	<p id="try"></p>
-	<p id="try2"></p>
-	
-	<script>
-		function getRndInteger(min, max) {
-		return Math.floor(Math.random() * (max - min + 1) ) + min;
-		}
-	
-		setTimeout(myFunction, 3000);
+<div class>
 
-		function myFunction() {
-		document.getElementById("try2").innerHTML = "WAWAWAWAWAW";
-		}
-			
-		function displayDate() {
-		const d = new Date();
-		document.getElementById("try3").innerHTML = d.toDateString();
-		}
-	</script>
-	
-	<button onclick="displayDate()">Today ngayong araw is:</button>
-	<p id="try3"></p>
-	
-	<button onclick="myFunction()">Pindutin mo nga</button>
-	<p id="try4"></p>
-	
-	<script>
-		function myFunction() {
-		let text;
-		let person = prompt("Lagay mo pangalan mo plz:", "Natoy");
-		if (person == null || person == "") {
-			text = "Edi wag";
-		} else {
-			text = "Yawa si idol " + person + " man diay ni!";
-		}
-		document.getElementById("try4").innerHTML = text;
-	}
-</script>
-</div>
-
-<div>
 <?php
-// define variables and set to empty values
 $name = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -201,6 +161,45 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+?>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "mydbwebprogmi211";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+// sql to create table
+$sql = "CREATE TABLE SampleTable (
+name VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+website VARCHAR(100),
+comment VARCHAR(50),
+gender VARCHAR(50)
+)";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Table SampleTable created successfully";
+} else {
+  echo "Error creating table: " . $conn->error;
+}
+
+$sql = "INSERT INTO SampleTable (name, email, website, comment, gender)
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
 
 <h2>PHP Form Validation Example</h2>
@@ -237,7 +236,7 @@ echo $gender;
 
 <!---========Footer ======--->
 <div class="footer">
-	<p>Footer</p>
+	<p>WIP Footer</p>
 </div>
 
 </body>
