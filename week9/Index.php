@@ -204,9 +204,9 @@ function test_input($data) {
 
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mydbwebprogmi211";
+$username = "webprogmi211";
+$password = "webprogmi211";
+$dbname = "dvluminarias_MyGuests";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
