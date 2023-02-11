@@ -4,9 +4,15 @@
 
 <?php
 $servername = "localhost";
+<<<<<<< HEAD
 $username = "webprogmi211";
 $password = "webprogmi211";
 $dbname = "dvluminarias_MyGuests";
+=======
+$username = "root";
+$password = "";
+$dbname = "myDBwebprogmi211";
+>>>>>>> d81f58eb3cde551836e0e4cfded9da86c2ec1918
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
