@@ -204,9 +204,9 @@ function test_input($data) {
 
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mydbwebprogmi211";
+$username = "webprogmi211";
+$password = "webprogmi211";
+$dbname = "webprogmi211";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -216,7 +216,7 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE MyGuests (
+$sql = "CREATE TABLE dvluminarias_MyGuests (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
 email VARCHAR(50),
@@ -226,12 +226,12 @@ gender VARCHAR(50)
 )";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Table MyGuests created successfully";
+  echo "Table dvluminarias_MyGuests created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }
 
-$sql = "INSERT INTO MyGuests (name, email, website, comment, gender) 
+$sql = "INSERT INTO dvluminarias_MyGuests (name, email, website, comment, gender) 
 VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
 if ($conn->query($sql) === TRUE) {
