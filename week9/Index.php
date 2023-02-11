@@ -206,7 +206,11 @@ function test_input($data) {
 $servername = "localhost";
 $username = "webprogmi211";
 $password = "webprogmi211";
+<<<<<<< HEAD
 $dbname = "webprogmi211";
+=======
+$dbname = "dvluminarias_MyGuests";
+>>>>>>> ca3e83bebb6e2658a3bb48d111426c75a623a088
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -216,7 +220,15 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
+<<<<<<< HEAD
 $sql = "CREATE TABLE dvluminarias_MyGuests (
+=======
+<<<<<<< HEAD
+$sql = "CREATE TABLE dvluminarias_MyGuests (
+=======
+$sql = "CREATE TABLE MyGuests (
+>>>>>>> d81f58eb3cde551836e0e4cfded9da86c2ec1918
+>>>>>>> ca3e83bebb6e2658a3bb48d111426c75a623a088
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
 email VARCHAR(50),
@@ -226,12 +238,28 @@ gender VARCHAR(50)
 )";
 
 if ($conn->query($sql) === TRUE) {
+<<<<<<< HEAD
   echo "Table dvluminarias_MyGuests created successfully";
+=======
+<<<<<<< HEAD
+  echo "Table dvluminarias_MyGuests created successfully";
+=======
+  echo "Table MyGuests created successfully";
+>>>>>>> d81f58eb3cde551836e0e4cfded9da86c2ec1918
+>>>>>>> ca3e83bebb6e2658a3bb48d111426c75a623a088
 } else {
   echo "Error creating table: " . $conn->error;
 }
 
+<<<<<<< HEAD
 $sql = "INSERT INTO dvluminarias_MyGuests (name, email, website, comment, gender) 
+=======
+<<<<<<< HEAD
+$sql = "INSERT INTO dvluminarias_MyGuests (name, email, website, comment, gender) 
+=======
+$sql = "INSERT INTO MyGuests (name, email, website, comment, gender) 
+>>>>>>> d81f58eb3cde551836e0e4cfded9da86c2ec1918
+>>>>>>> ca3e83bebb6e2658a3bb48d111426c75a623a088
 VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
 if ($conn->query($sql) === TRUE) {
