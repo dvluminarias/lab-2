@@ -1,0 +1,128 @@
+/*===== NAVIGATION BAR =====*/
+
+.paripapa img{
+	height: 30px;
+	position: absolute;
+	top: 15px;
+    left: 80px;
+}
+
+nav {
+	height: 60px;
+    width: 100%;
+	padding: 10px;
+    background: #020412;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    top: 0px;
+	transition: all .25s ease;
+}
+
+nav .mainMenu{
+	display: flex;
+	list-style: none;
+    z-index: 2;
+}
+
+nav .mainMenu li a{
+	display: inline-block;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 15px;
+	transition: all .25s ease;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+}
+
+nav .mainMenu li a:hover{
+	padding-bottom: 5px;
+	z-index: 2;
+    border-bottom-style: solid;
+    border-bottom-width: 2.5px;
+	border-bottom-color: #fff724;
+}
+
+nav .mainMenu li a:active{
+	padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2.5px;
+	border-bottom-color: #fff724;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+nav .openMenu, .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.ri-facebook-circle-fill:hover {
+    color: rgb(0, 110, 255);
+}
+
+.ri-twitter-fill:hover {
+    color: rgb(86, 154, 243);
+}
+
+.ri-youtube-fill:hover {
+    color: rgb(255, 0, 0);
+}
+
+.ri-github-fill:hover {
+    color: rgb(255, 123, 0);
+}
+
+@media (max-width: 950px) {
+nav .mainMenu {
+	height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:  #020412;
+    transition: top 1s ease 0s;
+    display: none;
+	}
+
+nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+	}
+
+nav .openMenu {
+      display: block;
+    }
+	
+nav .mainMenu li a:hover {
+    background: none;
+    color: #fff;
+    }
+	
+.icons i {
+	display: inline-block;
+    padding: 12px;
+	}
+}
+
+
+  

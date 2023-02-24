@@ -5,87 +5,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="media/icon.jpg">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="navbar.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	
 	<title>Meow Meow Meow</title>
-
-	<style>
-		.justify {
-		text-align: justify; 
-		text-justify: inter-word;
-		}
-		
-		.line {
-        padding-bottom: 5px;
-        border-bottom-style: solid;
-        border-bottom-width: 2.5px;
-        width: fit-content;
-        }
-		
-		.column50 {
-		float: left; 
-		width: 50%; 
-		}
-		
-		.column {
-		margin-left: auto;
-		margin-right: auto;
-		}
-		
-		.row:after {
-		content: ""; 
-		display: table; 
-		clear: both;
-		}
-		
-		.center {
-		display: flex;
-		align-items: center;
-		text-align: center;
-		}
-		
-		.vertical {
-		padding: 70px 0;
-		}
-	
-		.footer {
-		background-color: black;
-		color: white;
-		padding: 10px;
-		text-align: center;
-		margin: 0;
-		position: relative;
-		}
-
-	</style>
 </head>
 
 <body>
-	<header>
-		<a href="#" class="logo"><i></i><span>PARIPAPA</span></a>
-
-		<ul class="nav_bar">
+	<nav>
+		<div class ="paripapa">
+			<a href="#"><img src="media/Paripapa.jpg"></a>
+		</div>
+		
+		<div class="openMenu"><i class="ri-menu-fill"></i></div>
+		<ul class="mainMenu">
 			<li><a href="#Home" class="active">Home</a></li>
 			<li><a href="#About">About</a></li> 
 			<li><a href="#Achievements">Achievements</a></li>
 			<li><a href="#Contact">Contact</a></li>
 			<li><a href="guests.php">Guests</a></li>
+			<div class="closeMenu"><i class="ri-close-circle-fill"></i></div>
+			<span class="icons">
+                <i class="ri-facebook-circle-fill"></i>
+				<i class="ri-twitter-fill"></i>
+				<i class="ri-youtube-fill"></i>
+				<i class="ri-github-fill"></i>
+            </span>
 		</ul>
-		
-		<div class="main">
-			<div class="bx bx-menu" id="menu-icon"></div>
-		</div>
-		
 		<script>
-		const menu = document.querySelector('#menu-icon');
-		const nav_bar = document.querySelector('.nav_bar');
-		
-		menu.onclick = () => {
-			menu.classList.toggle('bx-x');
-			navbar.classList.toggle('open');
+		const mainMenu = document.querySelector('.mainMenu');
+		const closeMenu = document.querySelector('.closeMenu');
+		const openMenu = document.querySelector('.openMenu');
+		const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+		openMenu.addEventListener('click',show);
+		closeMenu.addEventListener('click',close);
+
+		// close menu when you click on a menu item 
+		menu_items.forEach(item => {
+			item.addEventListener('click',function(){
+        close();
+			})
+		})
+
+		function show(){
+			mainMenu.style.display = 'flex';
+			mainMenu.style.top = '0';
+		}
+		function close(){
+			mainMenu.style.top = '-100%';
 		}
 		</script>
+	</nav>
+	
+	<header>
+	
 	</header>
 	
 	<div >
