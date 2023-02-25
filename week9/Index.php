@@ -14,15 +14,15 @@
 </head>
 
 <body>
-	<nav>
+	<nav>	
 		<div class ="paripapa">
 			<a href="#"><img src="media/paripapa.jpg"></a>
 		</div>
 		
 		<div class="openMenu"><i class="ri-menu-fill"></i></div>
 		<ul class="mainMenu">
-			<li><a href="#Home">Home</a></li>
-			<li><a href="#About">About</a></li> 
+			<li><a href="#">Home</a></li>
+			<li><a href="#About">About Me</a></li> 
 			<li><a href="#Achievements">Achievements</a></li>
 			<li><a href="#Contact">Contact</a></li>
 			<li><a href="guests.php">Guests</a></li>
@@ -71,10 +71,10 @@
 		It’s one thing to feel that you are on the right path, but it’s another 
 		to think that yours is the only path.”</i><br>		
 		<b> - Paolo Coelho</b>
-		</p><br>
+		</p>
 		
 		<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">WIP Button 1</a>
-		<a href="" class="btn">References</a>
+		<a href="">References</a>
 	</div>
 	<img src="media/catto.jpg" class="catto-img">
 		

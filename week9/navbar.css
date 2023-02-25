@@ -1,4 +1,10 @@
 /*===== NAVIGATION BAR =====*/
+.vibing img{
+	height: 40px;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
 
 .paripapa img{
 	height: 30px;
