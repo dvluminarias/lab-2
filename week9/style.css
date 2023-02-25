@@ -13,73 +13,39 @@ body {
 	color: #fff;
 }
 
-.justify {
-	text-align: justify; 
-	text-justify: inter-word;
-}
-		
-.line {
-    padding-bottom: 5px;
-    border-bottom-style: solid;
-    border-bottom-width: 2.5px;
+.sectionTitle {
+    text-align: center;
     width: fit-content;
-}
-		
-.column50 {
-	float: left; 
-	width: 50%; 
-}
-		
-.column {
-	margin-left: auto;
+	font-size: 50px; 
+	font-weight: 700; 
+	margin-left: auto; 
 	margin-right: auto;
 }
-		
-.row:after {
-	content: ""; 
-	display: table; 
-	clear: both;
-}
-		
-.center {
-	display: flex;
-	align-items: center;
-	text-align: center;
-}
-		
-.vertical {
-	padding: 70px 0;
-}
-	
-.footer {
-	background-color: black;
-	color: white;
-	padding: 10px;
-	text-align: center;
-	margin: 0;
-	position: relative;
+
+hr{
+	width: 40%;
+	height: 3px;
+	border: 0 none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom:5px;
+	background-color:#fff724;
 }
 
 header {
-}
+} 
 
-img {
-	max-width: 100%;
-	height: auto;
+section{
+	min-height: fit-content;
 	display: block;
+	margin-bottom: 10%;
 }
 
-.about_img {
-	justify-self: center;
-}
-	
-.about_img img {
-	width: 200px;
-	border-radius: 0.5rem;
-}
-
+/*<---========Main======--->*/
 .text-box{
-	margin-top: 10%;
+	height: 100vh;
+	margin-top: 13%;
 	font-size: 15px;
 	letter-spacing: 1px;
 	line-height: 26px;
@@ -111,4 +77,45 @@ img {
 
 span{
 	color: yellow;
+}
+
+.catto-img{
+	width: 540px;
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+}
+
+/*<---========About======--->*/
+.aboutImage {
+	width: 250px;
+	height: 250px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.aboutImage img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.aboutText{
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: center;
+}
+
+/*<---========Achievements======--->*/
+
+
+/*<---========Footer======--->*/
+.footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin: 0;
+	position: relative;
 }

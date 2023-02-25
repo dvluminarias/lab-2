@@ -16,12 +16,12 @@
 <body>
 	<nav>
 		<div class ="paripapa">
-			<a href="#"><img src="media/Paripapa.jpg"></a>
+			<a href="#"><img src="media/paripapa.jpg"></a>
 		</div>
 		
 		<div class="openMenu"><i class="ri-menu-fill"></i></div>
 		<ul class="mainMenu">
-			<li><a href="#Home" class="active">Home</a></li>
+			<li><a href="#Home">Home</a></li>
 			<li><a href="#About">About</a></li> 
 			<li><a href="#Achievements">Achievements</a></li>
 			<li><a href="#Contact">Contact</a></li>
@@ -59,68 +59,80 @@
 		}
 		</script>
 	</nav>
-	
-	<header>
-	
-	</header>
-	
-	<div >
-		<div class="text-box">
-			<div>
+
+<!---========Main======--->
+	<div class="text-box">
+		<div>
 			<h1>I am <span class="auto-type"></span></h1>
-			</div>
-
-			<p>
-			<i>“We can never judge the lives of others, because each person knows only their own pain 
-			and renunciation. It’s one thing to feel that you are on the right path, but it’s another 
-			to think that yours is the only path.”</i>
-			<b> - Paolo Coelho</b></p>
-			
-			<a href="">WIP Button 1</a>
-			<a href="" class="btn">References</a>
 		</div>
-		
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-		
-		<script>
-			var typed = new Typed(".auto-type", {
-				strings: [ "Inevitable", "David Luminarias", "Iron Man"],
-				typeSpeed: 50,
-				backSpeed: 100,
-				loop: true})
-		</script>
-	</div>
 
-<!---========About ======--->
-<div>
-	<div class="column">
-		<div class="center">
-			<div>
-				<h2 class="line" id ="About" style="font-size: 40px; font-weight: 700; margin-left: auto; margin-right: auto;">
+		<p>
+		<i>“We can never judge the lives of others, because each person knows only their own pain and renunciation.<br>
+		It’s one thing to feel that you are on the right path, but it’s another 
+		to think that yours is the only path.”</i><br>		
+		<b> - Paolo Coelho</b>
+		</p><br>
+		
+		<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">WIP Button 1</a>
+		<a href="" class="btn">References</a>
+	</div>
+	<img src="media/catto.jpg" class="catto-img">
+		
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	
+	<script>
+		var typed = new Typed(".auto-type", {
+			strings: [ "Inevitable", "David Luminarias", "Iron Man"],
+			typeSpeed: 50,
+			backSpeed: 100,
+			loop: true})
+	</script>
+	
+<!---========About======--->
+	<section id="About">
+		<div>
+			<p class="sectionTitle">
 				About Me
-				</h2>
-				
-				<div class="about_img">
-					<img src="media/dp.jpg" alt="dp" />	
-				</div>
-				
-				<p>Hello, my name is David Wilson V. Luminarias, but you can call me “Lumi”. I am 20 years old and is currently taking the Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology course at Asia Pacific College. Although BSIT-MI is not my first option, it's still technically one of the courses I am interested in.<p>
-				
-				<p>Given the chance, I would have chosen Bachelor of Science in Forestry though unfortunately, I didn't pass the entrance examination.</p>
-			
-				<p>My hobbies and Interests include watching movies/documentaries/anime, reading manga/manhua/manhwa, playing games, and listening to music.</p>
-			
-				<p>While I don’t think there’s an interesting aspect in my life right now, I want to be successful enough that I can help others and enjoy the things that I want without worry through learning significant things that will be able to apply in real life from this subject.</p>
+			</p><hr>
+	
+			<div class="aboutImage">
+				<img src="media/dp.jpg" alt="dp" />	
 			</div>
+			<p class="aboutText">
+			Hello, my name is David Wilson V. Luminarias, but you can call me “Lumi”. I am 20 years old and is currently taking the 
+			Bachelor of Science in Information Technology with specialization in Mobile and Internet Technology course at Asia Pacific 
+			College. Although BSIT-MI is not my first option, it's still technically one of the courses I am interested in. <br><br>
+
+			Given the chance, I would have chosen Bachelor of Science in Forestry though unfortunately, I didn't pass the entrance examination.
+			My hobbies and Interests include watching movies/documentaries/anime, reading manga/manhua/manhwa, playing games, and listening to music.
+			While I don’t think there’s an interesting aspect in my life right now, I want to be successful enough that I can help others and 
+			enjoy the things that I want without worry through learning significant things that will be able to apply in real life from this subject.
+			</p>
 		</div>
-	</div>
-</div>
+	</section>
 
+<!---========Achievements======--->
+	<section id="Achievements">
+		<div>
+			<p class="sectionTitle">
+				Achievements
+			</p><hr>
+		</div>
+	</section>
+
+<!---========Contact======--->
+	<section id="Contact">
+		<div>
+			<p class="sectionTitle">
+				Contact
+			</p><hr>
+		</div>
+	</section>
+	
 <br>
 <br>
 
-<div class>
-
+<div>
 <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
@@ -255,9 +267,6 @@ echo $comment;
 echo "<br>";
 echo $gender;
 ?>
-
-</div>
-
 </div>
 
 <!---========Footer ======--->
